@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Source+Sans+Pro:wght@900&display=swap"
+    />
+    <script
+      src="https://kit.fontawesome.com/70ab527ecb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <form>
+          <div class="form-group">
+            <button class="submit-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input type="text" placeholder="Search City" />
+            <br />
+            <span class="error-msg disabled">No matching location found!</span>
+          </div>
+        </form>
+
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round">
+            <div>
+              <span>C</span>
+              <span>F</span>
+            </div>
+          </span>
+        </label>
+      </header>
+
+      <div class="main-weather-display info">
+        <div class="general-info">
+          <h1 class="location">MOON</h1>
+          <span class="degrees"></span>
+        </div>
+
+        <div class="weather-details info">
+          <p class="feels-like"></p>
+          <p class="wind-mph"></p>
+          <p class="humidity"></p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
